@@ -1,0 +1,74 @@
+@use '../helpers/variables' as vars;
+
+.header {
+  padding: 1.5em 0;
+  border-top: 3px solid var(--color-theme-accent);
+  border-bottom: 1px solid var(--color-border-dark);
+
+  @at-root [dark-theme='dark'] .header {
+    background: var(--color-dark-accent);
+  }
+}
+
+.contentWrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoWrp {
+  $height: 2em;
+
+  position: relative;
+  width: vars.$logo-ratio * $height;
+  height: $height;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+
+  > li {
+    margin-left: 2em;
+  }
+}
+
+.navLink {
+  position: relative;
+  opacity: 0.7;
+  font-weight: vars.$fw-m;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--color-theme-accent);
+    color: var(--color-white);
+    transform: scaleX(0);
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.navBtn {
+  padding: 0.5em 0.7em;
+  background: var(--color-theme);
+  border-radius: 0.25em;
+  color: var(--color-white);
+  font-weight: vars.$fw-m;
+
+  &:hover,
+  &:focus {
+    background: var(--color-theme-accent);
+  }
+}

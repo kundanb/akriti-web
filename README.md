@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Akriti
 
-## Getting Started
+Akriti is a lightweight API for creating 2D Graphics with JavaScript. It is based on HTML5 Canvas. It is a handful of functions that help you better manage the flow of drawing on the canvas.
 
-First, run the development server:
+## Installation
 
-```bash
-npm run dev
-# or
-yarn dev
+### As client-side JavaScript
+
+Include Akriti in your HTML code from any one of the following options:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/akriti@latest/dist/akriti.js"></script>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```html
+<script src="https://unpkg.com/akriti@latest/dist/akriti.js"></script>
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### As a Module
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Run `npm install akriti` in your project and use with any one of the following options:
 
-## Learn More
+With **CommonJS** require:
 
-To learn more about Next.js, take a look at the following resources:
+```js
+const akriti = require('akriti')
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Or with **ES6** import:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```js
+import * as Akriti from 'akriti'
+```
 
-## Deploy on Vercel
+## Documentation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Read the 📃 [docs]() to learn how to draw with Akriti.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+**Creator:** Kundan Bhasin ([@kundanb](https://github.com/kundanb))
+
+🤩 **_Enjoy it!_**

@@ -1,0 +1,28 @@
+@use '../helpers/variables' as vars;
+
+.container {
+  max-width: calc(vars.$bp-xxl - 10em);
+  margin: auto;
+  box-sizing: initial;
+
+  @media screen and (max-width: vars.$bp-xxl) {
+    max-width: calc(vars.$bp-xl - 8em);
+  }
+
+  @media screen and (max-width: vars.$bp-xl) {
+    max-width: calc(vars.$bp-lg - 6em);
+  }
+
+  @media screen and (max-width: vars.$bp-lg) {
+    max-width: calc(vars.$bp-md - 4em);
+  }
+
+  @media screen and (max-width: vars.$bp-md) {
+    max-width: calc(vars.$bp-sm - 2em);
+  }
+
+  @media screen and (max-width: vars.$bp-sm) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}

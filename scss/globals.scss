@@ -1,0 +1,114 @@
+@use 'helpers/variables' as vars;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap');
+
+:root {
+  --color-theme: #{vars.$color-theme};
+  --color-theme-accent: #{vars.$color-theme-accent};
+
+  --color-dark: #{vars.$color-dark};
+  --color-dark-accent: #{vars.$color-dark-accent};
+
+  --color-light: #{vars.$color-light};
+  --color-light-accent: #{vars.$color-light-accent};
+
+  --color-black: #{vars.$color-black};
+  --color-white: #{vars.$color-white};
+
+  --color-border-dark: #{vars.$color-border-dark};
+  --color-shadow-dark: #{vars.$color-shadow-dark};
+
+  --color-border-light: #{vars.$color-border-light};
+  --color-shadow-light: #{vars.$color-shadow-light};
+}
+
+[data-theme='dark'] {
+  --color-dark: #{vars.$color-light};
+  --color-dark-accent: #{vars.$color-light-accent};
+
+  --color-light: #{vars.$color-dark};
+  --color-light-accent: #{vars.$color-dark-accent};
+
+  --color-border-dark: #{vars.$color-border-light};
+  --color-shadow-dark: #{vars.$color-shadow-light};
+
+  --color-border-light: #{vars.$color-border-dark};
+  --color-shadow-light: #{vars.$color-shadow-dark};
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+}
+*,
+*::before,
+*::after {
+  transition: 0.2s ease-in-out;
+}
+
+body {
+  color: var(--color-dark);
+  font-family: vars.$font-stack;
+}
+
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.25em;
+}
+h6 {
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-weight: vars.$fw-b;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+input,
+select,
+textarea,
+button {
+  background: transparent;
+}
+button {
+  cursor: pointer;
+}
+textarea {
+  resize: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

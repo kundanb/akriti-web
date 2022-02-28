@@ -2,6 +2,7 @@
   "name": "akriti-web",
   "version": "0.1.0",
   "private": true,
+  "description": "A lightweight API for creating 2D Graphics with JavaScript.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +12,8 @@
   "dependencies": {
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sass": "^1.49.9"
   },
   "devDependencies": {
     "@types/node": "17.0.21",
